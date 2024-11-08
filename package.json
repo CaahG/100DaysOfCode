@@ -1,0 +1,14 @@
+{
+  "name": "100dayscode",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u00001\u00000\u00000\u0000D\u0000a\u0000y\u0000s\u0000O\u0000f\u0000C\u0000o\u0000d\u0000e\u0000\r\u0000 \u0000",
+  "main": "1day.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.9.0"
+  }
+}
