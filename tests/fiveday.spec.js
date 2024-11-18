@@ -20,7 +20,6 @@ test('adicionando produto ao carrinho', async ({ page }) => {
     { hasText: 'Starry Night' }
   ).locator('button[class="btn btn-primary btn-sm mt-4 w-full"]').click();
   await page.waitForTimeout(5000);
-  await page.waitForSelector('#cart-modal .modal-action .btn', { timeout: 5000 });
   await page.locator('#cart-modal .modal-action .btn').click();
   
 });
