@@ -1,18 +1,17 @@
-// //definindo variaveis de payloads
+
 
 const elements = {
     // elementos do formulario de login
-    button_login: 'a[id="login-button"]',
-    user_name: 'input[id="swal-username"]',
-    input_password: 'input[id="swal-password"]',
-    button_confirm: 'button[class="swal2-confirm swal2-styled"]',
-    text_success: 'text="Logged in successfully"',
-    // elementos dos cartoes de produtos
+    button_login: 'button[id="login-button"]',  
+    user_name: 'input[id="username"]',
+    input_password: 'input[id="password"]',
+    button_confirm: 'button[class="btn btn-primary"]',
+    text_success: 'text="Login successfully"',
     
-}
-module.exports = {
-    elements
-}
-    // nomes com _ sao snake case ex: user_name
-    // nomes com - sao kebab case ex: user-name
-    // nomes com letras maiusculas sao camel case ex: userName
+    // elementos do cartão de produtos
+    tittleto_card: 'h3[class="card-title text-lg"]', // Corrigido
+    button_addtocart: 'button[class="btn btn-primary btn-sm mt-4 w-full"]',
+    click_car: 'div[id="sticky-cart"]',
+    submit_orderubmit_order: 'button[class="btn btn-success"]',
+    text_success_order: 'text="Order Submitted"'
+};
