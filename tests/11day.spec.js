@@ -3,7 +3,7 @@ const { test, expect } = require("@playwright/test");
 
 const { elements, data } = require('../data/elementsposterstore');
 
-test("finalizando compra", async ({ page }) => {
+test("removendo produto", async ({ page }) => {
   // Aumentando o timeout do goto
   await page.goto("https://poster-store.pages.dev/#",);
 
@@ -18,22 +18,14 @@ test("finalizando compra", async ({ page }) => {
 
   // Espera pelo sucesso do login
  //injetando seletor de texto.
-  await page.locator(elements.titleToCard, { hasText: "Starry Night" })
-      .locator(elements.button_addtocart)
-      .click();
   await page.locator(elements.titleToCard, { hasText: "Majestic Forest" }).locator(elements.button_addtocart).click();
   await page.locator(elements.titleToCard, { hasText: "Indie Rock Legends" }).locator(elements.button_addtocart).click();
   await page.locator(elements.titleToCard, { hasText: "Tropical Paradise" }).locator(elements.button_addtocart).click();
+  await page.locator(elements.titleToCard, { hasText: "Modern Art Masterpiece" }).locator(elements.button_addtocart).click();
   await page.locator(elements.click_car).click();
+  await page.locator(elements.removendo_produto, { hasText: "Modern Art Masterpiece" }).locator(elements.button_remove).click();
   await page.locator(elements.submit_order).click();
-  await page.waitForSelector(elements.text_success_order);
+  const successMessage = page.locator(elements.text_success_order);
+  await successMessage.waitFor();
   console.log("Login bem-sucedido!");   
 });
-
-//await page
-    //.locator(
-     // 'div[class="card shadow-md hover:shadow-lg transition-shadow duration-300 animate__animated animate__fadeInUp"]',
-     // { hasText: "Starry Night" }
-    //)
-    //.locator('button[class="btn btn-primary btn-sm mt-4 w-full"]')
-    //.click();
