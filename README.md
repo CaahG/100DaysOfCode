@@ -36,7 +36,59 @@ Durante o desafio, estarei:
 📌 **Desenvolvendo exemplos práticos** para consolidar os conhecimentos adquiridos.  
 
 ---
+# 🛠️ **Testes de API - Métodos HTTP**
 
+Os testes de API são essenciais para validar o comportamento de sistemas que interagem entre si. Abaixo estão os principais métodos HTTP utilizados e suas finalidades nos testes:
+
+---
+
+### 📥 **GET**  
+**Descrição**: Recupera dados do servidor.  
+**Exemplo de Uso**: Buscar informações de um usuário cadastrado.  
+- **Validações Comuns**:
+  - Verificar o código de status (200 OK).  
+  - Garantir que os dados retornados correspondem à solicitação.  
+  - Confirmar o tempo de resposta e performance.
+
+---
+
+### 📤 **POST**  
+**Descrição**: Envia dados ao servidor, geralmente usado para criar novos recursos.  
+**Exemplo de Uso**: Criar um novo registro de usuário.  
+- **Validações Comuns**:
+  - Verificar o código de status (201 Created).  
+  - Certificar-se de que os dados enviados foram armazenados corretamente.  
+  - Validar respostas de erro (ex.: 400 Bad Request para dados inválidos).  
+
+---
+
+### 🛠️ **PUT**  
+**Descrição**: Atualiza dados no servidor, substituindo completamente o recurso existente.  
+**Exemplo de Uso**: Atualizar informações de perfil de um usuário.  
+- **Validações Comuns**:
+  - Verificar o código de status (200 OK ou 204 No Content).  
+  - Confirmar que os dados foram atualizados corretamente.  
+  - Testar cenários de recursos inexistentes (ex.: 404 Not Found).  
+
+---
+
+### ❌ **DELETE**  
+**Descrição**: Remove recursos do servidor.  
+**Exemplo de Uso**: Deletar um usuário ou item do banco de dados.  
+- **Validações Comuns**:
+  - Verificar o código de status (204 No Content).  
+  - Confirmar que o recurso não existe mais.  
+  - Validar respostas para tentativas de exclusão de recursos inexistentes (ex.: 404 Not Found).  
+
+---
+
+🎯 **Dicas para Testes de API**:  
+- Sempre teste cenários positivos e negativos.  
+- Valide cabeçalhos, autenticação e permissões.  
+- Utilize ferramentas como **Postman**, **Insomnia** ou **cURL** para criar e executar os testes.  
+
+
+---
 Este projeto é uma jornada para aprimorar minhas habilidades como Analista de Qualidade, proporcionando uma visão mais ampla e aprofundada sobre como **garantir a qualidade** no desenvolvimento de software. 🌟  
 
 🎉 **Acompanhe meu progresso e vamos aprender juntos!** 💡  
