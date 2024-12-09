@@ -91,5 +91,5 @@ Os testes de API são essenciais para validar o comportamento de sistemas que in
 ---
 Este projeto é uma jornada para aprimorar minhas habilidades como Analista de Qualidade, proporcionando uma visão mais ampla e aprofundada sobre como **garantir a qualidade** no desenvolvimento de software. 🌟  
 
-🎉 **Acompanhe meu progresso e vamos aprender juntos!** 💡  
+🎉 **Acompanhe meu progresso e vamos aprender juntos!** 💡 💻 
 
